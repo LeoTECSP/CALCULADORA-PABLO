@@ -1,0 +1,259 @@
+
+
+
+#calculator{
+height: 75%;
+width: 40%;
+
+margin-left: auto;
+margin-right: auto;
+
+background-color:rgb(225, 222, 222) ;
+border: 5px solid rgb(225, 222, 222);
+
+border-radius: 5px 5px 50px 5px; 
+
+animation: entrance 1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes entrance {
+	0% {
+		transform: scaleY(0);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+/* agrupar de 2, arriba abajo, y siguiente valor a los lados */
+
+
+#textDesign{
+
+height: 50px;
+text-align: right;
+font-size: xx-large;    
+}
+
+#textDesign p{
+    margin-top: 0px;
+    color:  rgb(15, 7, 90);
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-right: 10%;
+    display: inline;
+}
+
+@media (max-width: 660px){
+	.adjusted-mobile-margin .panel-row-style {
+		margin-left: 20px !important;
+	}
+    #calculator{
+        height: 70%;
+        width:80%;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+}
+
+    
+.elementsDesign div{
+
+height: 150px;
+text-align: center;
+display: block;
+}
+
+
+    
+#borderScreen{
+padding-left: 30px;
+padding-right:30px;
+padding-top: 50px;
+padding-bottom: 20px;
+background-color: rgb(225, 222, 222);
+}
+
+#displayScreen{
+height: 250px;
+background-color: rgb(115, 115, 111);
+text-align:center;
+padding-top: 5%;
+border: 10px solid rgb(115, 115, 111);
+border-radius: 10px 10px 50px 10px; 
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+#displayScreen h6{
+margin: 0px;
+padding-bottom: 10px;
+font-size: large;
+
+    color:  rgb(225, 222, 222);
+
+}
+
+#results{
+    background-color: rgb(109, 104, 104);
+    height: 80%;
+}
+
+
+.firstRow input[type=submit], 
+.rowDesign input[type=submit] {
+
+    height: 80%;
+    width: 20%;
+
+    background-color: #7d6e6e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    margin-right: 10px;
+    font-size: xx-large;
+
+    box-shadow: 5px 5px black;
+  }
+
+
+  .firstRow input[type=submit]:hover, 
+.rowDesign input[type=submit]:hover{
+
+ 
+    transition: .3s ease-in;
+    background-color: #600a1b;
+
+    animation-name: jump;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes jump {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+ #displayScreen input[type=text]{
+    height: 80%;
+    background-color: rgb(255, 249, 127);
+    width: 60%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+
+}
+
+#rotatedButtons input[type=submit]{
+    display: inline;
+  
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 8%;
+   vertical-align: top;
+    transform: rotate(-35deg); 
+
+    border-radius: 100px;
+  box-shadow: 2px 2px black;
+
+    background-color:  rgb(84, 84, 83);
+
+}
+
+#rotatedButtons{
+    text-align: right;
+    display: inline;
+    color: #7d6e6e;
+
+}
+
+#rotatedButtons label {
+    position: relative;
+    right: 8%;
+    margin-left: 10px;
+    font-size: large;
+    color: rgb(15, 7, 90);
+    font-weight: bold;
+    font-size: large;
+    transform: rotate(-35deg);
+    display: inline-block; 
+}
+
+
+
+
+
+#calculator.byebye {
+    animation-name: byebye;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes byebye {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	5% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	15% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	25% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	52% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	70% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	85% {
+		opacity: 1;
+	}
+
+	100% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+
+
+

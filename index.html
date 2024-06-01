@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="text/javaScript"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="calculator">
+        <div id="borderScreen">
+            <div id="displayScreen">
+
+                <h6>DOT MATRIX WITH STEREO SOUND</h6>
+                
+                <input onclick='screenDisplay(this)' id="textScreen"
+                 type="text" name="displayText" disabled  placeholder="">
+            
+            </div>
+        </div>
+      
+
+        <div class="elementsDesign" >
+
+           <div id="textDesign">
+            <p>Nintento LEO BOY TM.</p>
+     
+            <div id="rotatedButtons">
+         
+                    <input id="cleanButton" onclick="clearAll()" type="submit" name="registrar" value="">
+                    <label for="cleanButton">Clean</label>
+
+                    <input id="delButton" onclick='delInput()'  type="submit" name="registrar" value="">
+                    <label for="delButton">Delete</label>
+
+            </div>
+                
+           </div>
+            
+            <div class="firstRow">  
+             
+                <input onclick='numbers(this)'  type="submit" name="registrar" value="1">
+                <input onclick='numbers(this)'  type="submit" name="registrar" value="2">
+                <input onclick='numbers(this)' type="submit" name="registrar" value="3">
+                <input onclick='operator(this)'  type="submit" name="registrar" value="+">
+
+            </div>
+
+            <div class="rowDesign" >  
+
+                <input onclick='numbers(this)'  type="submit" name="registrar" value="4">
+                <input onclick='numbers(this)'  type="submit" name="registrar" value="5">
+                <input onclick='numbers(this)'   type="submit" name="registrar" value="6">
+                <input onclick='operator(this)' type="submit" name="registrar" value="-">
+
+            </div>
+                
+            <div class="rowDesign" >  
+           
+                <input onclick='numbers(this)' type="submit" name="registrar" value="7">
+                <input onclick='numbers(this)' type="submit" name="registrar" value="8">
+                <input onclick='numbers(this)' type="submit" name="registrar" value="9">
+                <input onclick='operator(this)' type="submit" name="registrar" value="*">
+
+            </div>
+
+            <div id="finalRow" class="rowDesign">  
+                <input onclick='numbers(this)' type="submit" name="registrar" value="0">
+                <input onclick='numbers(this)' type="submit" name="registrar" value=".">
+                <input onclick='operator(this)' type="submit" name="registrar" value="/">
+                <input onclick='result(this)' id ="results" type="submit" name="registrar" value="=">
+            </div>  
+
+           
+            <audio id="clickingButton" src="hover.mp3"></audio>
+            <audio id="clickingResult" src="resultClick.wav"></audio>
+            <audio id="entranceSound" src="entrance.wav"></audio>
+            <audio id="resetClear" src="resetClear.wav"></audio>
+            <audio id="operationClear" src="operationClick.wav"o></audio>
+            <audio id="endingClear" src="ending.wav"></audio>
+            
+      
+      
+      
+
+        </div>  
+      
+    </div>
+
+    
+    
+</body>
+</html>
